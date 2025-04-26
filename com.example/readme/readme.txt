@@ -15,3 +15,4 @@ PS D:\Projects\nginx_project> docker network connect backendnet nginx
 
 docker run --name nginx -p 80:8080 --hostname ng1 -v D:/Projects/nginx_project/nginx.conf:/etc/nginx/nginx.conf -d nginx:1.28.0-alpine
 
+docker run --name ng2 -p 81:8080 --hostname ng2 -v D:/Projects/nginx_project/nginx.conf:/etc/nginx/nginx.conf -d nginx:1.28.0-alpine
